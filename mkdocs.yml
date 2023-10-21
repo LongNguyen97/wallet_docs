@@ -1,0 +1,59 @@
+site_name: Wallet docs
+site_url: http://127.0.0.1:8000/
+
+logo: assets/logo.png
+
+theme:
+  name: material
+  features:
+    # - navigation.tabs
+    # - navigation.sections
+    - navigation.top
+    - toc.follow
+    - navigation.expand
+    - navigation.path
+    - navigation.instant
+    - navigation.toc
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - navigation.instant.prefetch
+    - content.code.copy
+    - navigation.instant.progress
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+
+# plugins:
+#   - autolinks
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
